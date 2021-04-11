@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Курсовая</string>
+    <string name="app_in_name">English\nStudy\nApp</string>
+    <string name="app_name_after">Register App</string>
+    <string name="text_bottom">Войдите в свою учетную запись</string>
+    <string name="btn_sign_in">Войти</string>
+    <string name="btn_register">Регистрация</string>
+    <string name="input_message">Введите сообщение</string>
+    <string name="eng_st_app_title">English\n Study\nApp</string>
+    <string name="title_activity_lesson_interface">LessonInterface</string>
+    <string name="tab_text_1">Правила</string>
+    <string name="tab_text_2">Тест</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root"
+    android:background="@drawable/enter_menu">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/suez_one"
+            android:text="@string/app_in_name"
+            android:textColor="@color/textDarkBlue"
+            android:textSize="35sp" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/montserrat_bold"-->
+<!--            android:text="@string/app_name_after"-->
+<!--            android:textColor="@color/colorRed"-->
+<!--            android:textSize="15sp" />-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="@string/text_bottom"
+        android:background="@color/colorWhite"
+        android:textColor="@color/textBottom"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_above="@+id/textBottom"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="@string/btn_sign_in" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btn_register" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="20"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWordInEnglish"
+        android:textStyle="normal|bold"
+        android:layout_weight="10"
+        android:textAlignment="textStart"
+        />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTranslationInRussian"
+        android:textAlignment="textStart"
+        android:layout_weight="10"
+        android:textStyle="normal|bold"
+        android:maxLines="3"
+        />
+
+</LinearLayout>

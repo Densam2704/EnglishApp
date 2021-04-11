@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAppActivity"
+    android:background="@color/colorMyAppActivityBackground">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-60dp"
+        android:layout_below="@id/linLay2"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="146dp"
+
+        android:text="@string/eng_st_app_title"
+        android:textColor="@color/textDarkBlue"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linLay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvId"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/textDarkBlue"
+            android:text=""
+            />
+
+        <Button
+            android:id="@+id/btn_general_test"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Общий тест"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/general_test_btn"
+            android:layout_margin="10dp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linLay1"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="30dp"
+        android:weightSum="3"
+        >
+
+        <Button
+            android:id="@+id/btn_beginner_lessons"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Beginner\n lessons"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:background="@drawable/btn_beginner"
+            android:layout_marginBottom="25dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btn_intermediate_lessons"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Intermediate\n lessons"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:background="@drawable/btn_intermediate"
+            android:layout_marginBottom="25dp"
+            >
+        </Button>
+        <Button
+            android:id="@+id/btn_advanced_lessons"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Advanced\n lessons"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
+            android:background="@drawable/btn_advanced"
+            android:layout_marginBottom="25dp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/colorWhite"
+        android:clickable="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:tint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_chat_btn"
+        app:fabSize="normal"
+        app:maxImageSize="40dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_vocabular_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/colorWhite"
+        android:tint="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:src="@drawable/ic_btn_vocabulary"
+        app:fabSize="normal"
+        app:maxImageSize="40dp"/>
+
+</RelativeLayout>

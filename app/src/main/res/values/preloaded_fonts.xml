@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arapey</item>
+        <item>@font/average_sans</item>
+        <item>@font/cantora_one</item>
+        <item>@font/creepster</item>
+        <item>@font/forum</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/open_sans_light</item>
+        <item>@font/suez_one</item>
+    </array>
+</resources>

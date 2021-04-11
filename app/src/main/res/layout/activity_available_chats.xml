@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvailableChats">
+
+    <LinearLayout
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+
+        android:id="@+id/layoutForTextViews"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/general_test_btn"
+            android:id="@+id/btnGeneralChat"
+            android:text="Перейти в общий чат"
+            android:textColor="@color/colorWhite"
+            android:onClick="onBtnGeneralChat"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGeneralChatTitle"
+            android:textAlignment="center"
+            android:text="Начатые личные чаты"
+            />
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:padding="1dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/layoutForTextViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chatsList"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_user_list"
+        android:backgroundTint="@color/colorGeneralTest"
+        android:tint="@color/colorWhite"
+        app:maxImageSize="30dp"
+        app:fabCustomSize="50dp"
+        app:rippleColor="@color/colorGeneralTestRippleEffect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+
+        android:onClick="onBtnStartChatting"
+        />
+
+</RelativeLayout>

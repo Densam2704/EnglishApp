@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bubbleLayout"
+        android:layout_below="@+id/message_user"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        app:bl_arrowDirection="left"
+        app:bl_arrowHeight="10dp"
+        app:bl_arrowPosition="20dp"
+        app:bl_arrowWidth="8dp"
+        app:bl_cornersRadius="10dp"
+        app:bl_strokeWidth="1dp"
+        app:bl_bubbleColor="@color/colorBackgroundSomeonesMessage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/message_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:textColor="@color/textDarkBlue"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:textSize="10sp"
+            android:textColor="@color/textDarkBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/message_time"
+            android:layout_margin="5dp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/message_user"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/average_sans"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/textDarkBlue"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    </com.daasuu.bl.BubbleLayout>
+
